@@ -1,4 +1,4 @@
-# Gate_Residues_MtbThyX
+# Second_Shell_Residues_
 Supporting files for the paper describing gates in MtbThyX
 
 # Packages used in the paper
