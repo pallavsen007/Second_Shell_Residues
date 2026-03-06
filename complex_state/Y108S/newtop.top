@@ -1,0 +1,53 @@
+
+#include "charmm36_psg.ff/forcefield.itp"
+
+#include "./ligands/UMP/E/ump.prm"
+
+#include "pmx_topol_Protein_chain_E.itp"
+#include "pmx_topol_Other_chain_E2.itp"
+#include "pmx_topol_Protein_chain_F.itp"
+#include "pmx_topol_Other_chain_F2.itp"
+#include "pmx_topol_Protein_chain_G.itp"
+#include "pmx_topol_Other_chain_G2.itp"
+#include "pmx_topol_Protein_chain_H.itp"
+#include "pmx_topol_Other_chain_H2.itp"
+
+
+#include "./ligands/UMP/E/ump.itp"
+#ifdef POSRES_LIG
+#include "./ligands/UMP/E/posre_umpE.itp"
+#include "./ligands/UMP/F/posre_umpF.itp"
+#include "./ligands/UMP/G/posre_umpG.itp"
+#include "./ligands/UMP/H/posre_umpH.itp"
+#endif
+
+
+#include "./charmm36_psg.ff/tip3p.itp"
+
+
+
+
+#ifdef POSRES_WATER
+[ position_restraints ]
+1    1       1000       1000       1000
+#endif
+#include "./charmm36_psg.ff/ions.itp"
+
+[ system ]
+PMX MODEL in water
+
+[ molecules ]
+Protein_chain_E 1
+Other_chain_E2 1
+Protein_chain_F 1
+Other_chain_F2 1
+Protein_chain_G 1
+Other_chain_G2 1
+Protein_chain_H 1
+Other_chain_H2 1
+UMP            4
+SOL 422
+SOL         33630
+SOD              129
+CLA              109
+

@@ -1,0 +1,38 @@
+
+#include "charmm36_psg.ff/forcefield.itp"
+
+#include "pmx_topol_Protein_chain_A.itp"
+#include "pmx_topol_Other_chain_A2.itp"
+#include "pmx_topol_Protein_chain_B.itp"
+#include "pmx_topol_Other_chain_B2.itp"
+#include "pmx_topol_Protein_chain_C.itp"
+#include "pmx_topol_Other_chain_C2.itp"
+#include "pmx_topol_Protein_chain_D.itp"
+#include "pmx_topol_Other_chain_D2.itp"
+#include "./charmm36_psg.ff/tip3p.itp"
+
+
+
+
+#ifdef POSRES_WATER
+[ position_restraints ]
+1    1       1000       1000       1000
+#endif
+#include "./charmm36_psg.ff/ions.itp"
+
+[ system ]
+PMX MODEL in water
+
+[ molecules ]
+Protein_chain_A 1
+Other_chain_A2 1
+Protein_chain_B 1
+Other_chain_B2 1
+Protein_chain_C 1
+Other_chain_C2 1
+Protein_chain_D 1
+Other_chain_D2 1
+SOL 257
+SOL         32895
+SOD              117
+CLA              105

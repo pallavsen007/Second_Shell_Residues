@@ -1,0 +1,43 @@
+HETATM    1  P   UMP H 260     -39.680  33.787 -27.139  1.00 12.88           P  
+HETATM    2  O1P UMP H 260     -40.222  33.125 -28.392  1.00 13.59           O  
+HETATM    3  O2P UMP H 260     -40.264  33.143 -25.933  1.00 14.84           O1-
+HETATM    4  O3P UMP H 260     -38.198  33.730 -27.173  1.00 11.48           O  
+HETATM    5  C5' UMP H 260     -39.613  36.242 -28.042  1.00 14.69           C  
+HETATM    6  O5' UMP H 260     -40.069  35.331 -27.057  1.00 12.97           O  
+HETATM    7  C4' UMP H 260     -40.295  37.603 -27.907  1.00 14.41           C  
+HETATM    8  O4' UMP H 260     -41.616  37.535 -28.384  1.00 16.07           O  
+HETATM    9  C3' UMP H 260     -40.437  38.073 -26.437  1.00 15.12           C  
+HETATM   10  O3' UMP H 260     -40.575  39.465 -26.352  1.00 13.92           O  
+HETATM   11  C2' UMP H 260     -41.737  37.493 -25.987  1.00 15.69           C  
+HETATM   12  C1' UMP H 260     -42.342  37.116 -27.309  1.00 16.53           C  
+HETATM   13  N1  UMP H 260     -43.173  35.955 -27.342  1.00 18.50           N  
+HETATM   14  C2  UMP H 260     -44.146  35.747 -26.407  1.00 17.03           C  
+HETATM   15  O2  UMP H 260     -44.446  36.609 -25.575  1.00 17.15           O  
+HETATM   16  N3  UMP H 260     -44.839  34.578 -26.448  1.00 17.36           N  
+HETATM   17  C4  UMP H 260     -44.502  33.585 -27.346  1.00 20.76           C  
+HETATM   18  O4  UMP H 260     -45.158  32.529 -27.345  1.00 24.14           O  
+HETATM   19  C5  UMP H 260     -43.546  33.818 -28.318  1.00 19.36           C  
+HETATM   20  C6  UMP H 260     -42.823  34.996 -28.249  1.00 18.29           C  
+HETATM   21  H01 UMP H 260     -43.367  33.096 -29.114  1.00 19.36           H  
+CONECT    1    2    3    4    6
+CONECT    2    1
+CONECT    3    1
+CONECT    4    1
+CONECT    5    6    7
+CONECT    6    5    1
+CONECT    7    5    8    9
+CONECT    8    7   12
+CONECT    9    7   10   11
+CONECT   10    9
+CONECT   11    9   12
+CONECT   12    8   11   13
+CONECT   13   12   14   20
+CONECT   14   13   15   16
+CONECT   15   14
+CONECT   16   14   17
+CONECT   17   16   18   19
+CONECT   18   17
+CONECT   19   17   20   21
+CONECT   20   13   19
+CONECT   21   19
+END
